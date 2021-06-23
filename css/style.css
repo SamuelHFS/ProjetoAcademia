@@ -24,9 +24,14 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+   
     
 }
-
+.ativo{
+				
+    color:black;
+background-color: #faec28;
+}
 .botao span {
     cursor: pointer;
     display: inline-block;
