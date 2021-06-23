@@ -26,3 +26,16 @@
 
 
                 https://getbootstrap.com/docs/5.0/examples/checkout/
+
+
+                <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <form method="get" action="https://www.epicgames.com/fortnite/pt-BR/home">
+            <!--FECHAR O FORM!!!-->
+            <button class="botao" style="vertical-align:middle">
+              <span>teste</span>
+            </button>
+          </form>
