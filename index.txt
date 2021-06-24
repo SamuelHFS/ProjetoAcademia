@@ -39,3 +39,25 @@
               <span>teste</span>
             </button>
           </form>
+
+          create schema academiaProjetinFelas;
+use academiaProjetinFelas;
+
+create table cadastro (
+id int auto_increment primary key,
+nome varchar(100),
+email varchar(100),
+senha varchar(100),
+telefone varchar(11),
+cpf varchar(11),
+sexo varchar(10),
+cidade varchar(50),
+cep varchar(8),
+endereco varchar(50),
+nascimento date,
+estado varchar(50));
+
+INSERT INTO cadastro (nome, email, senha, telefone, cpf, sexo, cidade, cep, endereco, nascimento, estado)
+VALUES ('Samuel', 'samuel.jpgl@gmail.com', '12345678', '61998576131', '00000000000', 'masculino', 'sobradinho', '73092907', 'condo', '2001-12-10', 'distrito federal');
+
+SELECT * FROM cadastro;

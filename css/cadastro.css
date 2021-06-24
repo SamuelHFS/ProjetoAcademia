@@ -29,6 +29,32 @@ data{
     font-size: 15px;
     
 }
+
+/*.register-parent {
+    height: 100%;
+    padding: 0 2%;
+   
+    
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 670px;
+    transition: 2.8s;
+}
+
+.register {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+   
+    border: 10px solid rgb(250, 247, 247);
+    border-radius: 10px 10px 10px 10px;
+    color: rgb(240, 233, 233);
+    background-color: rgba(0, 0, 5, 0, 8);
+    transition: 2.8s;
+}*/
 .formselect{
     position: center;
     background-color: #ffffff;
@@ -67,9 +93,10 @@ body{
     background-color: #161616;
     background-image: url(/img/fundo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; max-width: 500px;
 }
 .box{
+   
     color: rgb(0, 0, 0);
     position: absolute;
     top: 50%;
@@ -118,7 +145,7 @@ legend{
     border: none;
     border-bottom: 1px solid rgb(0, 0, 0);
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     width: 100%;
     letter-spacing: 2px;
