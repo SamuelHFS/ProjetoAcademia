@@ -61,3 +61,27 @@ INSERT INTO cadastro (nome, email, senha, telefone, cpf, sexo, cidade, cep, ende
 VALUES ('Samuel', 'samuel.jpgl@gmail.com', '12345678', '61998576131', '00000000000', 'masculino', 'sobradinho', '73092907', 'condo', '2001-12-10', 'distrito federal');
 
 SELECT * FROM cadastro;
+
+
+$altura = ;
+$peso = ;
+
+$imc = $peso / ($altura^2);
+
+
+
+
+
+$idade = 25;
+
+switch($idade){
+  case (idade < 18): echo "Menor de Idade";
+}
+
+ $idade = 25;
+
+switch($idade){
+    case ($idade < 18): echo "Menor de Idade"; break;
+    case ($idade > 18): echo "Maior de Idade"; break;
+    default: echo "Está no limbo";
+  }
