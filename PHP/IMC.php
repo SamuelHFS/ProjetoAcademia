@@ -2,7 +2,7 @@
 
 $idade = 19;
 $altura = 1.80;
-$peso = 77;
+$peso = 90;
 $imc = $peso /($altura ^ 2);
 $nome = "Samuel";
 $ativado = true;

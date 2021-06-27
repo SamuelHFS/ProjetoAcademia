@@ -21,10 +21,20 @@
 </form>
 
 <?php
-switch(inset($_POST['voto'])){
-    switch($candidato){
-        case($voto == "1");
-        echo "Você votou em Sabastião"
+if(isset($_POST['voto'])){
+
+    $cand = $_POST['candidato'];
+
+    switch($cand){
+        case(1): 
+            echo 'Votou em Sebastião'; break;
+        case(2): 
+            echo 'Votou em Miranda'; break;
+        case(3): 
+            echo 'Votou em Fabiana'; break;
+        default: 
+            echo 'Nulo'; break;
+    
     }
 }
 
@@ -32,7 +42,7 @@ switch(inset($_POST['voto'])){
 </body>
 
 
-//$sql .= "'".$_POST['nome']."',";
+<!--//$sql .= "'".$_POST['nome']."',";
 $idade = 25;
 
 switch($idade){
@@ -48,5 +58,5 @@ switch($idade){
   }
 
 
-  repetir estrutura php 
+  repetir estrutura php -->
 </html>
