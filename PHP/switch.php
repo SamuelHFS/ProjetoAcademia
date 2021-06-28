@@ -9,6 +9,21 @@
 <body>
  <h3> Eleições para síndico </h3>   
  <label> Selecione o seu candidato</label>
+ <?php
+ if(!isset($_COOKIE["c1"])) {
+     setcookie("c1", 0);
+     setcookie("c2", 0);
+     setcookie("c3", 0);
+     setcookie($n, 0);
+     setcookie("contador", 1);
+     setcookie($x, 1);
+     setcookie("vencedor", 0);
+ }
+ do{     
+
+    setcookie("contador", $_COOKIE("contador")+1);
+       }
+ ?>
  <form mathod="post" action="">
      <label> Candidato: </label>
      <select name="candidato">
@@ -21,23 +36,52 @@
 </form>
 
 <?php
+if(!isset($_COOKIE["c1"])) {
+    setcookie("c1", 0);
+    setcookie("c2", 0);
+    setcookie("c3", 0);
+    setcookie("n", 0);
+    setcookie("contador", 1);
+    setcookie("x", 1);
+    setcookie("vencedor", 0);
+}
+do{     
+
+   setcookie("contador", $_COOKIE("contador")+1);
+      }
+
 if(isset($_POST['voto'])){
 
-    $cand = $_POST['candidato'];
+    $candidato = $_POST['candidato'];
 
-    switch($cand){
+    switch($candidato){
         case(1): 
-            echo 'Votou em Sebastião'; break;
+            echo 'Votou em Sebastião'; setcookie("c1", $_COOKIE("c1")+1); break;
         case(2): 
-            echo 'Votou em Miranda'; break;
+            echo 'Votou em Marta'; setcookie("c2", $_COOKIE("c2")+1); break;
         case(3): 
-            echo 'Votou em Fabiana'; break;
+            echo 'Votou em Miranda'; setcookie("c3", $_COOKIE("c3")+1); break;
         default: 
-            echo 'Nulo'; break;
+            echo 'Nulo'; setcookie($n, $_COOKIE($n)+1);  break;
     
     }
-}
 
+}while($_COOKIE["contador"] < 5);
+
+    if($_COOKIE["vencedor"] <= $_COOKIE["c1"]){
+        setcookie("vencedor", $_COOKIE["c1"]);
+        $nomeVencedor = "Sebastião";
+    }
+    if($_COOKIE["vencedor"]  <= $_COOKIE["c2"]){
+        setcookie("vencedor", $_COOKIE["c2"]);
+        $nomeVencedor = "Sebastião";
+    }
+    if($_COOKIE["vencedor"]  <= $_COOKIE["c3"]){
+        setcookie("vencedor", $_COOKIE["c3"]);
+        $nomeVencedor = "Sebastião";
+    
+}
+echo "<br>Síndico eleito: $nomevencedor , com "vencedor""
 ?>
 </body>
 
