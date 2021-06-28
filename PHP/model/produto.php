@@ -7,38 +7,111 @@ Class Produto{
     private $vlrVenda;
     private $qtdEstoque;
     
-    function setId($id){
-        $this->id = $id;
-    }
-    function getId(){
+    
+
+
+
+    
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
         return $this->id;
     }
-    function setNome($nome){
-        $this->nome = $nome;
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
     }
-    function getNome(){
+
+    /**
+     * Get the value of nome
+     */ 
+    public function getNome()
+    {
         return $this->nome;
     }
-    function setVlrCompra($vlrCompra){
-        $this->vlrCompra = $vlrCompra;
+
+    /**
+     * Set the value of nome
+     *
+     * @return  self
+     */ 
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+
+        return $this;
     }
-    function getVlrCompra(){
+
+    /**
+     * Get the value of vlrCompra
+     */ 
+    public function getVlrCompra()
+    {
         return $this->vlrCompra;
     }
-    function setVlrVenda($vlrVenda){
-        $this->vlrVenda = $vlrVenda;
+
+    /**
+     * Set the value of vlrCompra
+     *
+     * @return  self
+     */ 
+    public function setVlrCompra($vlrCompra)
+    {
+        $this->vlrCompra = $vlrCompra;
+
+        return $this;
     }
-    function getVlrVenda(){
+
+    /**
+     * Get the value of vlrVenda
+     */ 
+    public function getVlrVenda()
+    {
         return $this->vlrVenda;
     }
-    function setEstoque($qtdEstoque){
-        $this->qtdEstoque = $qtdEstoque;
+
+    /**
+     * Set the value of vlrVenda
+     *
+     * @return  self
+     */ 
+    public function setVlrVenda($vlrVenda)
+    {
+        $this->vlrVenda = $vlrVenda;
+
+        return $this;
     }
-    function getEstoque(){
+
+    /**
+     * Get the value of qtdEstoque
+     */ 
+    public function getQtdEstoque()
+    {
         return $this->qtdEstoque;
     }
 
+    /**
+     * Set the value of qtdEstoque
+     *     **********************************extensão PHP Getters & Setters************************
+     *     **********************************extensão Bracket Pair Colorizer 2*********************
 
+     * @return  self
+     */ 
+    public function setQtdEstoque($qtdEstoque)
+    {
+        $this->qtdEstoque = $qtdEstoque;
 
-
+        return $this;
+    }
 }
