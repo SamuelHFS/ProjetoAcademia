@@ -80,6 +80,8 @@ switch($idade){
 
  $idade = 25;
 
+ testando
+
 switch($idade){
     case ($idade < 18): echo "Menor de Idade"; break;
     case ($idade > 18): echo "Maior de Idade"; break;
