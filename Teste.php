@@ -51,7 +51,7 @@ cifrão ($):
  (*****código*****) $nome = "João";
                     $sobrenome = "da Silva";
                     echo "$sobrenome, $nome";
-*/
-?>
+*/ 
+?> 
 </body>
 </html>
