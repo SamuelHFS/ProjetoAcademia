@@ -1,1 +1,4 @@
 repositório do git: ProjetoAcademia
+
+
+Localização desktop: downloads e xampp
